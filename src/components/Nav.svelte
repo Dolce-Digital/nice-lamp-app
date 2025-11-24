@@ -10,7 +10,7 @@
   <div class="nav-links">
     <a href="/" on:click|preventDefault={() => navigate("/")}>Home</a>
     <a href="/new" on:click|preventDefault={() => navigate("/new")}>New Email</a>
-    <a href="/packs" on:click|preventDefault={() => alert("Coming soon!")}>Packs</a>
+  <a href="/packs" on:click|preventDefault={() => navigate("/packs")}>Packs</a>
     <a href="#" on:click|preventDefault={() => alert("Account system coming later")}>Account</a>
   </div>
 </nav>
