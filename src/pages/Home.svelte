@@ -3,7 +3,8 @@
 </script>
 
 <div class="hero">
-  <h1>Votre email, réinventé.</h1>
+<h1>Your email, reinvented.</h1>
+
   <p class="tagline">
     Create, refine, and preview hotel emails in minutes —
     without templates, frustration, or burnout.
