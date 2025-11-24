@@ -1,16 +1,12 @@
 <script>
-  // future logic goes here
+  import Nav from "./components/Nav.svelte";
+  import Home from "./pages/Home.svelte";
 </script>
 
-<style>
-  body {
-    background: var(--nl-light);
-    font-family: Raleway, sans-serif;
-    color: var(--nl-dark);
-  }
-</style>
+<Nav />
 
-<div class="app-container">
-  <h1>Nice-Lamp ConciergeEmail App</h1>
-  <p>Welcome to your App V1 — UI coming next!</p>
-</div>
+<Home />
+
+<style>
+@import './styles/global.css';
+</style>
