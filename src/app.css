@@ -26,8 +26,3 @@ button {
 button:hover {
   background: #b9325e;
 }
-Then import it inside: src/routes/+layout.svelte
-Add at the top:
-<script>
-  import "../app.css";
-</script>
