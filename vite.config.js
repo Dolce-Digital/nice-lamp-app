@@ -1,8 +1,7 @@
-import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { sveltekit } from '@sveltejs/kit/vite';
 
-export default {
-  plugins: [svelte()],
-  server: {
-    port: 5173
-  }
+const config = {
+  plugins: [sveltekit()]
 };
+
+export default config;
