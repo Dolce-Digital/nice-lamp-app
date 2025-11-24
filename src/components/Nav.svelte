@@ -3,26 +3,32 @@
 </script>
 
 <nav class="navbar">
-  <div class="brand">
-    Nice-Lamp ConciergeEmail
-  </div>
+  <div class="brand">Nice-Lamp ConciergeEmail</div>
 
   <div class="nav-links">
     <a class={$page.url.pathname === "/" ? "active" : ""} href="/">Home</a>
-    <a class={$page.url.pathname.startsWith("/new") ? "active" : ""} href="/new">New Email</a>
-    <a class={$page.url.pathname.startsWith("/packs") ? "active" : ""} href="/packs">Seasonal Packs</a>
-    <a href="#" on:click|preventDefault={() => alert("Account system coming later")}>Account</a>
+
+    <a class={$page.url.pathname.startsWith("/new") ? "active" : ""} href="/new">
+      New Email
+    </a>
+
+    <a class={$page.url.pathname.startsWith("/packs") ? "active" : ""} href="/packs">
+      Packs
+    </a>
+
+    <a href="#" on:click|preventDefault={() => alert("Account coming soon")}>Account</a>
   </div>
 </nav>
 
 <style>
-/* Active link styling */
+/* ACTIVE STATE */
 a.active {
   font-weight: bold;
   border-bottom: 2px solid #D84171;
+  color: #D84171;
 }
 
-/* Nav bar */
+/* NAV STYLES */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,15 +38,6 @@ a.active {
   border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
-/* Brand */
-.brand {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.6rem;
-  color: #392B21;
-  border-bottom: 3px solid rgba(216, 65, 113, 0.25);
-}
-
-/* Links */
 .nav-links {
   display: flex;
   gap: 24px;
