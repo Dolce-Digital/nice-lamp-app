@@ -1,0 +1,28 @@
+:root {
+  --nl-pink: #D84171;
+  --nl-dark: #392B21;
+  --nl-light: #F6F4EF;
+  --nl-neutral: #B4A298;
+  --nl-gold: #D4AF37;
+}
+
+/* Global reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: var(--nl-light);
+  font-family: Raleway, sans-serif;
+  color: var(--nl-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-family: Raleway, sans-serif;
+}
