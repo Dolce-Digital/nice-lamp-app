@@ -8,13 +8,19 @@
   </div>
 
   <div class="nav-links">
-    <a href="/" on:click|preventDefault={() => navigate("/")}>Home</a>
-    <a href="/new" on:click|preventDefault={() => navigate("/new")}>New Email</a>
-  <a href="/packs" on:click|preventDefault={() => navigate("/packs")}>Packs</a>
+   <a class={$page.url.pathname === "/" ? "active" : ""} href="/">Home</a>
+<a class={$page.url.pathname.startsWith("/new") ? "active" : ""} href="/new">New Email</a>
+<a class={$page.url.pathname.startsWith("/packs") ? "active" : ""} href="/packs">Seasonal Packs</a>
     <a href="#" on:click|preventDefault={() => alert("Account system coming later")}>Account</a>
   </div>
 </nav>
 
+<style>
+a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #D84171;
+}
+</style>
 <style>
 /* (same CSS as before) */
 .navbar {
