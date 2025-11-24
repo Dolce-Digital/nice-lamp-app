@@ -1,15 +1,22 @@
+<script>
+  export let navigate;
+</script>
+
 <nav class="navbar">
-  <div class="brand">Nice-Lamp ConciergeEmail</div>
+  <div class="brand" on:click={() => navigate("/")}>
+    Nice-Lamp ConciergeEmail
+  </div>
 
   <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/new">New Email</a>
-    <a href="/packs">Packs</a>
-    <a href="#">Account</a>
+    <a href="/" on:click|preventDefault={() => navigate("/")}>Home</a>
+    <a href="/new" on:click|preventDefault={() => navigate("/new")}>New Email</a>
+    <a href="/packs" on:click|preventDefault={() => alert("Coming soon!")}>Packs</a>
+    <a href="#" on:click|preventDefault={() => alert("Account system coming later")}>Account</a>
   </div>
 </nav>
 
 <style>
+/* (same CSS as before) */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -24,6 +31,7 @@
   font-size: 1.6rem;
   color: var(--nl-dark);
   border-bottom: 3px solid rgba(216, 65, 113, 0.25);
+  cursor: pointer;
 }
 
 .nav-links {
