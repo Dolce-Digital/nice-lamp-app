@@ -2,14 +2,15 @@
   "name": "nice-lamp-app",
   "version": "0.0.1",
   "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "svelte-kit sync && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/adapter-auto": "latest",
+    "@sveltejs/kit": "latest",
     "svelte": "latest",
     "vite": "latest"
   }
